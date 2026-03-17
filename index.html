@@ -12,6 +12,9 @@ body {
   height: 100vh;
   font-family: Arial;
   color: white;
+
+  /* disables highlighting everywhere */
+  user-select: none;
 }
 
 h1 {
@@ -30,19 +33,6 @@ h1 {
   border-radius: 10px;
   position: relative;
 }
-
-/* ❌ removed the battery tip */
-/*
-.battery::after {
-  content: "";
-  position: absolute;
-  right: -12px;
-  width: 8px;
-  height: 20px;
-  background: white;
-  border-radius: 2px;
-}
-*/
 
 .level {
   height: 100%;
