@@ -1,0 +1,48 @@
+body {
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Arial;
+  color: white;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#percentText {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.battery {
+  width: 120px;
+  height: 50px;
+  border: 4px solid white;
+  border-radius: 10px;
+  position: relative;
+}
+
+/* ❌ removed the battery tip */
+/*
+.battery::after {
+  content: "";
+  position: absolute;
+  right: -12px;
+  width: 8px;
+  height: 20px;
+  background: white;
+  border-radius: 2px;
+}
+*/
+
+.level {
+  height: 100%;
+  width: 50%;
+  background: limegreen;
+  border-radius: 6px;
+  transition: width 0.5s;
+}
